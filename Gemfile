@@ -8,6 +8,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'turbolinks'
+  gem 'guard-rspec'
 end
 
 group :assets do
@@ -19,10 +20,13 @@ end
 gem 'jquery-rails'
 
 group :test do
+  gem 'rspec-rails'
   gem 'capybara'
   gem 'turbolinks'
+  gem 'rb-fsevent', :require => false
+  gem 'growl'
 end
 
-group :producTion do
+group :production do
   gem 'pg'
 end
